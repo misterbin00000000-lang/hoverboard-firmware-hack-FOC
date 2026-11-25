@@ -390,10 +390,10 @@ int main(void) {
           #ifdef INVERT_R_DIRECTION
             pwmr = cmdR;
           #else
-            pwmr = -cmdR;
+            pwmr = cmdR;
           #endif
           #ifdef INVERT_L_DIRECTION
-            pwml = cmdL;
+            pwml = -cmdL;
           #else
             pwml = cmdL;
           #endif
