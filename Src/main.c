@@ -393,7 +393,7 @@ int main(void) {
             pwmr = -cmdR;
           #endif
           #ifdef INVERT_L_DIRECTION
-            pwml = -cmdL;
+            pwml = cmdL;
           #else
             pwml = cmdL;
           #endif
