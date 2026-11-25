@@ -395,7 +395,7 @@ int main(void) {
           #ifdef INVERT_L_DIRECTION
             pwml = -cmdL;
           #else
-            pwml = cmdL;
+            pwml = -cmdL;
           #endif
 
           if (checkRemote) {
