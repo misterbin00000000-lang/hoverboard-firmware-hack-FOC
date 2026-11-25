@@ -197,7 +197,7 @@ void DMA1_Channel1_IRQHandler(void) {
     /* Set motor inputs here */
     rtU_Left.b_motEna     = enableFin;
     rtU_Left.z_ctrlModReq = ctrlModReq;  
-    rtU_Left.r_inpTgt     = pwml;
+    rtU_Left.r_inpTgt     = -pwml;
     rtU_Left.b_hallA      = hall_ul;
     rtU_Left.b_hallB      = hall_vl;
     rtU_Left.b_hallC      = hall_wl;
@@ -243,7 +243,7 @@ void DMA1_Channel1_IRQHandler(void) {
     /* Set motor inputs here */
     rtU_Right.b_motEna      = enableFin;
     rtU_Right.z_ctrlModReq  = ctrlModReq;
-    rtU_Right.r_inpTgt      = pwmr;
+    rtU_Right.r_inpTgt      = -pwmr;
     rtU_Right.b_hallA       = hall_ur;
     rtU_Right.b_hallB       = hall_vr;
     rtU_Right.b_hallC       = hall_wr;
